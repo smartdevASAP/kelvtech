@@ -19,9 +19,7 @@ import Services4 from "./services4.png";
 import newabout from "./newabout.png";
 import underscore from "./underscore.png";
 import homemenu from "./homemenu.png";
-import aboutmenu from "./aboutmenu(1).png";
 import pricingmenu from "./pricingmenu.png";
-import servicesMenu from "./servicesMenu(1).png";
 import homeICON from "./homeICON.png";
 import aboutICON from "./aboutICON.png";
 import servicesICON from "./servicesICON.png";
@@ -47,8 +45,6 @@ export const obj = {
   homemenu,
   // pricemenu,
   pricingmenu,
-  servicesMenu,
-  aboutmenu,
 };
 export const services = [
   {

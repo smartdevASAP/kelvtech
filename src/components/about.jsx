@@ -5,69 +5,126 @@ function About() {
   return (
     <div id="about" className=" mt-16">
       <h1 className="flex gap-3 items-end  text-gray-600 mb-10 font-bold h-4 text-2xl  md:text-3xl">
-        About
-        <img className="h-8" src={obj.logo} alt="" />
+        About Us
       </h1>
-      <div className="md:flex gap-5 overflow-hidden">
-        <img className="w-[400px] md:w-[450px]" src={obj.newabout} alt="" />
-        <div>
-          <div className=" mt-10 mb-10 flex gap-3 md:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-[40%_1px_1fr] gap-6 items-start">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 text-gray-700">
+          <div className="flex items-center bg-primary rounded-sm shadow-sm p-4 justify-center text-center">
             <div>
-              <div className="text-primary text-2xl font-bold md:text-3xl">
-                <CountUp className="ml-2" end={20} duration={4} />+
-              </div>
-              <h1 className="text-gray-600 font-bold">Projects</h1>
-            </div>
-            <div>
-              <div className="text-primary text-2xl font-bold  md:text-3xl">
-                <CountUp className="ml-2" end={5} duration={4} />+
-              </div>
-              <h1 className="text-gray-600 font-bold">Awards</h1>
-            </div>
-            <div>
-              <div className="text-primary text-2xl font-bold md:text-3xl">
-                <CountUp className="ml-2" end={10} duration={4} />+
-              </div>
-              <h1 className="text-gray-600 font-bold">Pending</h1>
-            </div>
-            <div>
-              <div className="text-primary text-2xl font-bold md:text-3xl">
-                <CountUp className="ml-2" end={15} duration={4} />+
-              </div>
-              <h1 className="text-gray-600 font-bold">Refferals</h1>
+              <h1 className="text-3xl text-white font-bold">
+                <CountUp end={10} duration={5} />+
+              </h1>
+              <p className="text-white">Projects</p>
             </div>
           </div>
-          <p className="text-gray-400">
-            KevTech empowers business growth through strategic, scalable digital
-            solutions-infusing every project with creativity, clear goals, and
-            lasting impact.
+
+          <div className="flex items-center bg-gray-100  p-4  rounded-sm shadow-sm justify-center text-center">
+            <div>
+              <h1 className="text-3xl text-gray-600 font-bold">
+                <CountUp end={10} duration={5} />+
+              </h1>
+              <p className="text-gray-500">Clients</p>
+            </div>
+          </div>
+          <div className="flex items-center bg-gray-100  p-4 rounded-sm shadow-sm justify-center text-center">
+            <div>
+              <h1 className="text-3xl text-gray-600 font-bold">
+                <CountUp end={5} duration={5} />+
+              </h1>
+              <p className="text-gray-500">Pending</p>
+            </div>
+          </div>
+          <div className="flex items-center bg-gray-100  p-4 rounded-sm shadow-sm justify-center text-center">
+            <div>
+              <h1 className="text-3xl text-gray-600 font-bold">
+                <CountUp end={2} duration={5} />+
+              </h1>
+              <p className="text-gray-500">Awards</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Middle vertical line */}
+        <div className="bg-gray-100 w-full h-full" />
+        {/* Right section (remaining 40%) */}
+        <div>
+          <p className="text-gray-500 mb-8">
+            At KevTech, we turn ideas into digital realities. We're a creative
+            tech studio focused on building custom websites, apps, and business
+            systems that not only look good — but work beautifully. Whether
+            you're a startup, a brand, or just starting out with a vision,
+            KevTech is your go-to partner for clean, functional, and scalable
+            digital solutions. We don't do one-size-fits-all. Every build is
+            tailored, every project treated with purpose. Simple. Smart. Built
+            for growth — that's KevTech.
           </p>
+          <button className="md:p-3 w-full text-center p-2 bg-primary text-white shadow-sm">
+            <a href="#services"> Learn more</a>
+          </button>
         </div>
       </div>
       {/* more */}
-      <div className="w-full mt-10 bg-primary  relative h-[550px] md:h-[420px] rounded-sm p-4">
-        {/* left section */}
-        <div>
-          <h1 className="font-bold text-2xl md:text-3xl max-w-[600px] mb-[20px]  leading-tight text-white">
-            Did you know KevTech is offering free services for the first 10
-            clients?
+      <div className="p-4 mt-16 bg-indigo-100 rounded-sm md:mt-24 ">
+        <div className="text-center">
+          <h1 className="font-bold text-2xl mb-2 text-gray-600 md:text-3xl">
+            Why Choose Us
           </h1>
-          <p className="text-gray-200 text-sm mb-4">
-            click free trial and enjoy free service in web development{" "}
-          </p>
-          <div className="relative">
-            <button className="p-1  bg-gray-100 text-black shadow shadow-gray-800 hover:scale-104 transition rounded-sm">
-              Get Started
+          <small className="text-gray-500 mb-4 text-sm">
+            We believe to offer cutting-edge skills in all our projects
+          </small>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 mt-16 text-center text-gray-700">
+          {/* Card 1 */}
+          <div className="p-6 bg-indigo-50 rounded-xl flex flex-col items-center">
+            <img className="mx-auto mb-3" src={obj.fast} alt="Fast Icon" />
+            <h1 className="text-lg font-bold mt-2 mb-2">Fast Building</h1>
+            <p className="text-sm text-gray-600">
+              At KevTech, we prioritize speed without compromising quality. Our
+              fast-building process ensures your website, app, or system is
+              delivered quickly and efficiently — so you can focus on growth,
+              not delays.
+            </p>
+            <button className="font-semibold mt-6 p-2 text-white bg-primary w-full rounded-sm">
+              <a href="#services"> Learn more</a>
             </button>
-            <img className="absolute mb-[-25px]" src={obj.whiteArrow} alt="" />
+          </div>
+
+          {/* Card 2 */}
+          <div className="p-6 bg-indigo-50 rounded-xl flex flex-col items-center">
+            <img
+              className="mx-auto mb-3"
+              src={obj.responsive}
+              alt="Fast Icon"
+            />
+            <h1 className="text-lg font-bold mt-2 mb-2">Responsive Design</h1>
+            <p className="text-sm text-gray-600">
+              Every product we build at KevTech is designed to look and function
+              perfectly across all devices — from desktops to tablets and
+              smartphones. We ensure your users enjoy a seamless experience no
+              matter where they are.
+            </p>
+            <button className="font-semibold mt-6 p-2 text-white bg-primary w-full rounded-sm">
+              <a href="#services"> Learn more</a>
+            </button>
+          </div>
+
+          {/* Card 3 */}
+          <div className="p-6 bg-indigo-50 rounded-xl flex flex-col items-center">
+            <img className="mx-auto mb-3" src={obj.support} alt="Fast Icon" />
+            <h1 className="text-lg font-bold mt-2 mb-2">Continous Support</h1>
+            <p className="text-sm text-gray-600">
+              At KevTech, our work doesn’t stop after launch. We provide ongoing
+              support to ensure everything runs smoothly. Whether it's updates,
+              fixes, or feature improvements — we’re always here when you need
+              us.
+            </p>
+            <button className="font-semibold mt-6 p-2 text-white bg-primary w-full rounded-sm">
+              <a href="#services"> Learn more</a>
+            </button>
           </div>
         </div>
-        <img
-          className="absolute bottom-0 h-[270px] md:h-[300px] lg:h-[350px] right-0"
-          src={obj.about}
-          alt=""
-        />
       </div>
+      {/*end more */}
       {/* gallery */}
       <div className="bg-indigo-50 mt-10 py-24 sm:py-32">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">

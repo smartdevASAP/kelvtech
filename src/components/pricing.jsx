@@ -1,6 +1,12 @@
 import React from "react";
 import { obj } from "../assets/assets";
+import { Link } from "react-router-dom";
+import { useAppContext } from "../context/appContext";
 function Pricing() {
+  const { isUserStarted, isStarted } = useAppContext();
+  const getPlan = () => {
+    isUserStarted();
+  };
   return (
     <div id="pricing" className="mt-16 ">
       <h1 className="text-2xl font-bold text-gray-600 mb-12">Pricing</h1>
@@ -44,9 +50,11 @@ function Pricing() {
               Affordable & Fast Setup
             </small>
             <br />
-            <button className="w-full p-2 text-white text-center rounded-sm bg-primary">
-              Get plan
-            </button>
+            <Link to="/login">
+              <button className="w-full p-2 text-white text-center rounded-sm bg-primary">
+                Get plan
+              </button>
+            </Link>
           </div>
         </div>
         <div className="bg-primary text-white p-4 shadow-primary shadow-sm rounded-sm">
@@ -83,9 +91,11 @@ function Pricing() {
               1-Month Free Maintenance
             </small>
             <br />
-            <button className="w-full p-2 text-primary text-center rounded-sm bg-white">
-              Get plan
-            </button>
+            <Link to="/login">
+              <button className="w-full p-2 text-primary text-center rounded-sm bg-white">
+                Get plan
+              </button>
+            </Link>
           </div>
         </div>
         <div className="bg-white p-4 shadow-primary shadow-sm rounded-sm">
@@ -130,9 +140,11 @@ function Pricing() {
               Support
             </small>
             <br />
-            <button className="w-full p-2 text-white text-center rounded-sm bg-primary">
-              Get plan
-            </button>
+            <Link to="/login">
+              <button className="w-full p-2 text-white text-center rounded-sm bg-primary">
+                Get plan
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -3,7 +3,6 @@ import menu from "./menu.png";
 import GIF from "./GIF.png";
 // import ellipse from "./ellipse.png";
 import clip from "./clip.png";
-import avatar from "./avatar.svg";
 import arrow from "./arrow.png";
 import about from "./about.png";
 import whiteArrow from "./whiteArrow.png";
@@ -26,6 +25,23 @@ import servicesICON from "./servicesICON.png";
 import pricingICON from "./pricingICON.png";
 import menubar from "./menubar.png";
 import close from "./close.png";
+//login;
+import login from "./login.png";
+import splash from "./splash.png";
+import man from "./man.png";
+import underline from "./underline.png";
+import avatar from "./avatar.png";
+import userHome from "./userHome.png";
+import optionClosed from "./optionClosed.png";
+import optionOpen from "./optionOpen.png";
+import custom from "./custom.png";
+import message from "./message.png";
+import rocket from "./rocket.png";
+import fast from "./fast.png";
+import responsive from "./responsive.png";
+import support from "./support.png";
+import notifications from "./notifications.png";
+import logout from "./logout.png";
 export const obj = {
   logo,
   menu,
@@ -45,6 +61,20 @@ export const obj = {
   homemenu,
   // pricemenu,
   pricingmenu,
+  login,
+  splash,
+  man,
+  underline,
+  userHome,
+  optionOpen,
+  optionClosed,
+  custom,
+  message,
+  rocket,
+  fast,
+  responsive,
+  support,
+  notifications,
 };
 export const services = [
   {
@@ -79,4 +109,5 @@ export const sideBar = {
   pricingICON,
   menubar,
   close,
+  logout,
 };

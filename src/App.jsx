@@ -1,31 +1,55 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import { useAppContext } from "./context/appContext";
 import NavBar from "./components/navBar";
-import Home from "./components/home";
-import About from "./components/about";
-import Pricing from "./components/pricing";
-import Services from "./components/services";
 import Footer from "./components/footer";
-import Inspiration from "./components/inspiration";
-import Testiminials from "./components/testiminials";
+import AppLayout from "./pages/appLayout";
+import Login from "./pages/login";
+import UserDashLayout from "./pages/userDashBoard/userDashLayout";
 
 function App() {
   const { isMenuToggled, setIsMenuToggled } = useAppContext();
+
   return (
     <>
-      <NavBar />
-      <div
-        onClick={() => setIsMenuToggled(false)}
-        className="max-w-[80vw] mx-auto pt-4"
-      >
-        <Home />
-        <About />
-        <Services />
-        <Pricing />
-        <Inspiration />
-        <Testiminials />
-      </div>
-      <Footer />
+      <Routes>
+        {/* Main Layout with Nav + Footer */}
+        <Route
+          path="/"
+          element={
+            <>
+              <NavBar />
+              <div
+                onClick={() => setIsMenuToggled(false)}
+                className="max-w-[80vw] mx-auto pt-4"
+              >
+                <AppLayout />
+              </div>
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Login Page */}
+        <Route
+          path="/login"
+          element={
+            <div className=" pt-4">
+              <Login />
+            </div>
+          }
+        />
+
+        {/* User Dashboard */}
+        <Route
+          path="/userdashboard"
+          element={
+            <div className="  pt-4">
+              <UserDashLayout />
+            </div>
+          }
+        />
+      </Routes>
     </>
   );
 }

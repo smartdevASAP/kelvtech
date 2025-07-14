@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function Card({ item }) {
   const { image, content, title } = item;
   return (
@@ -12,12 +13,11 @@ function Card({ item }) {
           <p className="text-gray-500 text-sm lg:text:1xl mb-4 ">{content}</p>
         </div>
         <div className="flex gap-8">
-          <button className="p-2 shadow-sm text-sm shadow-gray-200 rounded-sm bg-primary text-white">
-            Book Service
-          </button>
-          <button className="p-2 shadow-sm text-sm shadow-gray-200 rounded-sm text-gray-600">
-            Make enquiry
-          </button>
+          <Link to="/login">
+            <button className="p-2 shadow-sm text-sm shadow-gray-200 rounded-1 bg-primary text-white">
+              Get Package
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { obj } from "../assets/assets";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div
@@ -42,13 +42,14 @@ function Home() {
               src={obj.arrow}
               alt=""
             />
-            <button className="p-2 bg-primary text-white rounded-sm">
-              Get free trial
+            <button className="p-2 md:p-3 rounded-sm flex  items-center gap-3 bg-primary text-white rounded-xsm">
+              <img src={obj.rocket} alt="" />
+              <Link to="/login">Get Started</Link>
             </button>
           </div>
 
-          <button className="border border-indigo-200 p-2 rounded-sm">
-            Learn more
+          <button className="border rounded-sm text-gray-600 border-indigo-200 p-2 text-sm md:p-3">
+            <a href="#pricing"> Explore More</a>
           </button>
         </div>
       </div>

@@ -189,3 +189,184 @@ how we turn ideas into impactful digital experiences. <br />
 </p>
 
 <img className=" md:h-[200px]" src="{obj.explore2}" alt="" />
+
+<!-- removed about -->
+<div className="md:flex gap-5 overflow-hidden">
+  <img className="w-[400px] md:w-[450px]" src="{obj.newabout}" alt="" />
+  <div>
+    <div className=" mt-10 mb-10 flex gap-3 md:gap-10">
+      <div>
+        <div className="text-primary text-2xl font-bold md:text-3xl">
+          <CountUp className="ml-2" end="{20}" duration="{4}" />+
+        </div>
+        <h1 className="text-gray-600 font-bold">Projects</h1>
+      </div>
+      <div>
+        <div className="text-primary text-2xl font-bold  md:text-3xl">
+          <CountUp className="ml-2" end="{5}" duration="{4}" />+
+        </div>
+        <h1 className="text-gray-600 font-bold">Awards</h1>
+      </div>
+      <div>
+        <div className="text-primary text-2xl font-bold md:text-3xl">
+          <CountUp className="ml-2" end="{10}" duration="{4}" />+
+        </div>
+        <h1 className="text-gray-600 font-bold">Pending</h1>
+      </div>
+      <div>
+        <div className="text-primary text-2xl font-bold md:text-3xl">
+          <CountUp className="ml-2" end="{15}" duration="{4}" />+
+        </div>
+        <h1 className="text-gray-600 font-bold">Refferals</h1>
+      </div>
+    </div>
+    <p className="text-gray-400">
+      KevTech empowers business growth through strategic, scalable digital
+      solutions-infusing every project with creativity, clear goals, and lasting
+      impact.
+    </p>
+  </div>
+</div>
+
+
+<!-- LOGIN FORM -->
+
+// import React from "react";
+// import { obj } from "../assets/assets";
+// import { Link } from "react-router-dom";
+// import { useAppContext } from "../context/appContext";
+// import { useState } from "react";
+// function Login() {
+//   //const [isStarted, setIsStarted] = useState(false);
+//   const {
+//     isStarted,
+//     setIsStarted,
+//     username,
+//     setUsername,
+//     email,
+//     setEmail,
+//     password,
+//     setPassword,
+//   } = useAppContext();
+//   //setting the credentials;
+//   const handleSubmit = () => {
+//     setUsername("");
+//     setEmail("");
+//     setPassword("");
+//     console.log({ username, email, password });
+//   };
+//   return (
+//     <>
+//       <div className="p-6">
+//         <Link to="/">
+//           <img src={obj.logo} alt="" />
+//         </Link>
+//         <div className="space-y-8 mt-6  md:flex justify-between">
+//           {isStarted === false ? (
+//             <div className="md:w-[590px]">
+//               <h1 className="mb-8 mt-8 font-bold text-3xl md:text-4xl text-gray-600">
+//                 Get Started with <br /> us.
+//               </h1>
+//               <p className="text-gray-700 text-sm md:text-1xl">username</p>
+//               <input
+//                 required
+//                 onChange={(e) => setUsername(e.target.value)}
+//                 value={username}
+//                 className=" w-full mt-2 border-gray-200 bg-indigo-50/2 p-2 rounded-full border-1"
+//                 type="text"
+//                 placeholder="username"
+//               />
+//               <p className="text-gray-700 mt-4 text-sm md:text-1xl">email</p>
+//               <input
+//                 required
+//                 onChange={(e) => setEmail(e.target.value)}
+//                 value={email}
+//                 className="w-full  mt-2 border-gray-200 bg-indigo-50/2 p-2 rounded-full border-1"
+//                 type="email"
+//                 placeholder="kelvin@gmail.com"
+//               />
+//               <p className="text-gray-700 mt-4 text-sm md:text-1xl">password</p>
+//               <input
+//                 required
+//                 onChange={(e) => setPassword(e.target.value)}
+//                 value={password}
+//                 className=" w-full  mt-2 border-gray-200 bg-indigo-50/2 p-2 rounded-full border-1"
+//                 type="text"
+//                 placeholder="*****"
+//               />
+//               <Link to="/userdashboard">
+//                 <button
+//                   onClick={() => handleSubmit()}
+//                   className="w-full p-2 mt-4 mb-2 md:p-4 rounded-sm text-white bg-primary text-center"
+//                 >
+//                   Get Started
+//                 </button>
+//               </Link>
+//               <small className="text-gray-600 ">
+//                 Already started?{" "}
+//                 <a
+//                   className="text-primary cursor-pointer"
+//                   onClick={() => setIsStarted(!isStarted)}
+//                   href="#"
+//                 >
+//                   Click here
+//                 </a>
+//               </small>
+//             </div>
+//           ) : (
+//             <div>
+//               <h1 className="mb-8 mt-8 font-bold text-3xl md:text-4xl text-gray-600">
+//                 Welcome Back 👋
+//               </h1>
+
+//               <p className="text-gray-700 mt-4 text-sm md:text-1xl">email</p>
+//               <input
+//                 required
+//                 onChange={(e) => setEmail(e.target.value)}
+//                 value={email}
+//                 className="w-full  mt-2 border-gray-200 bg-indigo-50/2 p-2 rounded-full border-1"
+//                 type="email"
+//                 placeholder="kelvin@gmail.com"
+//               />
+//               <p className="text-gray-700 mt-4 text-sm md:text-1xl">password</p>
+//               <input
+//                 required
+//                 onChange={(e) => setPassword(e.target.value)}
+//                 value={password}
+//                 className=" w-full  mt-2 border-gray-200 bg-indigo-50/2 p-2 rounded-full border-1"
+//                 type="text"
+//                 placeholder="*****"
+//               />
+//               <Link to="/userdashboard">
+//                 <button
+//                   onClick={() => handleSubmit()}
+//                   className="w-full p-2 mt-4 mb-2 md:p-4 rounded-sm text-white bg-primary text-center"
+//                 >
+//                   Log in
+//                 </button>
+//               </Link>
+//               <small className="text-gray-600 ">
+//                 You have not started?
+//                 <a
+//                   className="text-primary cursor-pointer"
+//                   onClick={() => setIsStarted(!isStarted)}
+//                   href="#"
+//                 >
+//                   Click here
+//                 </a>
+//               </small>
+//             </div>
+//           )}
+
+//           <img
+//             className="order-1 sm:order-2  md:h-108 lg:h-120 mr-24"
+//             src={obj.login}
+//             alt=""
+//           />
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+// export default Login;

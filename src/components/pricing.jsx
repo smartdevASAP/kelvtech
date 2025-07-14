@@ -60,7 +60,7 @@ function Pricing() {
         <div className="bg-primary text-white p-4 shadow-primary shadow-sm rounded-sm">
           <p className=" text-white mt-4 ">Premium</p>
           <h1 className="font-bold lg:text-3xl mb-2 text-2xl  text-white">
-            sh99,999
+            sh69,999
           </h1>
           <p className=" text-white mb-4 text-xsm">
             Ideal for growing businesses ready to scale digitally.
@@ -101,7 +101,7 @@ function Pricing() {
         <div className="bg-white p-4 shadow-primary shadow-sm rounded-sm">
           <p className="text-gray-400 mt-4 ">Enterprise</p>
           <h1 className="font-bold lg:text-3xl mb-2 text-2xl text-primary">
-            sh39,999
+            sh29,999
           </h1>
           <p className="text-gray-700 mb-4 text-xsm">
             The best package for small-scale sized enterprises{" "}

@@ -7,10 +7,9 @@ function Footer() {
         <div class="md:max-w-96">
           <img class="h-9" src={obj.logo} alt="dummyLogoDark" />
           <p class="mt-6 text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Built with passion and precision by KevTech. Empowering your ideas
+            with modern design and robust solutions. Let’s create something
+            extraordinary together.
           </p>
         </div>
         <div class="flex-1 flex items-start md:justify-end gap-20">

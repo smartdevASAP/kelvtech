@@ -37,7 +37,7 @@ function About() {
           <div className="flex items-center bg-gray-100  p-4 rounded-sm shadow-sm justify-center text-center">
             <div>
               <h1 className="text-3xl text-gray-600 font-bold">
-                <CountUp end={2} duration={5} />+
+                <CountUp end={2} duration={5} />
               </h1>
               <p className="text-gray-500">Awards</p>
             </div>

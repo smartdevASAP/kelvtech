@@ -6,7 +6,7 @@ import axios from "axios";
 
 axios.defaults.withCredentials = true;
 //const baseURL = "http://localhost:4000";
-const baseURL = "https://kevtech-server-main-server.onrender.com";
+const baseURL = "https://kevtech-server-1.onrender.com";
 
 axios.defaults.baseURL = baseURL;
 
